@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url(../fonts/Karla-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: "Karla";
+    font-weight: 400;
+}
+
+header, main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
+    text-transform: uppercase;
+}
+
+.logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+nav ul{
+    display: flex;
+    gap: 2em;
+    list-style: none;
+}
+
+.shop-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
+
+.product-full-width{
+    grid-column: 1 / -1;
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.product-price{
+    align-self: flex-end;
+    padding-right: 1em;
+}
