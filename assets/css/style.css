@@ -52,12 +52,22 @@ nav ul{
 }
 
 .product{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.product-image, .product-brand{
+    grid-column: 1 / -1;
+    padding: 1em 0 1em 0;
 }
 
 .product-price{
-    align-self: flex-end;
-    padding-right: 1em;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    text-align: right;
+}
+
+.product-brand{
+    color: rgb(152, 152, 152);
+    font-weight: 100;
 }
